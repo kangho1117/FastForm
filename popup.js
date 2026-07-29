@@ -34,22 +34,19 @@
   // Transparent Sponsored Ads Rotation List (Adsterra Direct Link)
   const SPONSORED_ADS = [
     {
-      title: '🎁 Support FastForm (Sponsor)',
+      title: 'Support FastForm (Sponsor)',
       desc: 'Click to view partner offers & help keep FastForm free.',
-      url: ADSTERRA_DIRECT_LINK,
-      icon: '🎁'
+      url: ADSTERRA_DIRECT_LINK
     },
     {
-      title: '📢 Featured Partner Advertisement',
+      title: 'Featured Partner Advertisement',
       desc: 'Check out sponsored content from our advertising partner.',
-      url: ADSTERRA_DIRECT_LINK,
-      icon: '📢'
+      url: ADSTERRA_DIRECT_LINK
     },
     {
-      title: '⚡ FastForm Sponsor Link',
+      title: 'FastForm Sponsor Link',
       desc: 'Click to explore featured links and support development.',
-      url: ADSTERRA_DIRECT_LINK,
-      icon: '⚡'
+      url: ADSTERRA_DIRECT_LINK
     }
   ];
 
@@ -98,8 +95,6 @@
 
     const randomAd = SPONSORED_ADS[Math.floor(Math.random() * SPONSORED_ADS.length)];
 
-    const iconEl = adBannerCard.querySelector('.ad-icon');
-    if (iconEl) iconEl.textContent = randomAd.icon;
     if (adTitle) adTitle.textContent = randomAd.title;
     if (adDesc) adDesc.textContent = randomAd.desc;
     if (adLink) adLink.href = randomAd.url;
@@ -135,7 +130,6 @@
       const tab = document.createElement('button');
       tab.className = `tab${index === activeIndex ? ' active' : ''}`;
       tab.innerHTML = `
-        <span class="tab-icon">👤</span>
         <span>${profile.profileName || `Profile ${index + 1}`}</span>
       `;
       tab.addEventListener('click', () => switchTab(index));
@@ -281,7 +275,7 @@
     await chrome.storage.local.set({ profiles, activeProfileIndex: activeIndex });
 
     renderTabs();
-    setStatus('Profile saved successfully ✓', 'success');
+    setStatus('Profile saved successfully', 'success');
 
     setTimeout(() => setStatus(`Editing Profile ${activeIndex + 1}`, 'info'), 2000);
   });
@@ -347,7 +341,7 @@
         action: 'fillFormFromPopup',
         profile
       });
-      setStatus('Form autofilled! ✨', 'success');
+      setStatus('Form autofilled', 'success');
       setTimeout(() => setStatus(`Editing Profile ${activeIndex + 1}`, 'info'), 2500);
     } catch (error) {
       setStatus('Failed to fill form. Try refreshing the webpage.', 'error');
@@ -364,7 +358,7 @@
       document.body.appendChild(downloadAnchor);
       downloadAnchor.click();
       downloadAnchor.remove();
-      setStatus('Profiles exported to JSON! 📥', 'success');
+      setStatus('Profiles exported to JSON', 'success');
     });
   }
 
@@ -389,7 +383,7 @@
             await chrome.storage.local.set({ profiles, activeProfileIndex: 0 });
             renderTabs();
             loadProfileToForm();
-            setStatus('Profiles imported successfully! 📤', 'success');
+            setStatus('Profiles imported successfully', 'success');
           }
         } catch (err) {
           setStatus('Invalid JSON file format', 'error');

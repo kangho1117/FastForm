@@ -1,141 +1,141 @@
 {
-  "extName": {
-    "message": "FastForm - 무료 폼 자동 채우기 & 업무 자동화"
-  },
-  "extDesc": {
-    "message": "무제한 프로필 템플릿을 저장하고 Alt+A 단축키 한 번으로 웹 폼을 100% 무료로 자동 채워줍니다."
-  },
-  "subtitle": {
-    "message": "원클릭 무제한 폼 자동 채우기"
-  },
-  "addBtn": {
-    "message": "추가"
-  },
-  "personalInfoTitle": {
-    "message": "기본 및 연락처 정보"
-  },
-  "profileNameLabel": {
-    "message": "프로필 이름"
-  },
-  "profileNamePlaceholder": {
-    "message": "예: 개인용, 회사용, 부업용"
-  },
-  "firstNameLabel": {
-    "message": "이름 (First Name)"
-  },
-  "lastNameLabel": {
-    "message": "성 (Last Name)"
-  },
-  "emailLabel": {
-    "message": "이메일 주소"
-  },
-  "phoneLabel": {
-    "message": "전화번호"
-  },
-  "taxIdLabel": {
-    "message": "사업자등록번호 / Tax ID / VAT"
-  },
-  "addressTitle": {
-    "message": "주소 정보"
-  },
-  "streetAddrLabel": {
-    "message": "주소 / 도로명 (Line 1)"
-  },
-  "aptAddrLabel": {
-    "message": "상세주소 / 동호수 (Line 2)"
-  },
-  "cityLabel": {
-    "message": "도시 (City)"
-  },
-  "stateLabel": {
-    "message": "주 / 도 (State/Region)"
-  },
-  "zipLabel": {
-    "message": "우편번호 (ZIP Code)"
-  },
-  "countryLabel": {
-    "message": "국가 (Country)"
-  },
-  "companyTitle": {
-    "message": "회사 및 추가 답변"
-  },
-  "companyLabel": {
-    "message": "회사명"
-  },
-  "jobTitleLabel": {
-    "message": "직위 / 부서"
-  },
-  "noteLabel": {
-    "message": "기타 표준 답변 / 메모"
-  },
-  "customFieldsTitle": {
-    "message": "맞춤형 커스텀 필드"
-  },
-  "customFieldsDesc": {
-    "message": "원하는 키워드와 답변을 자유롭게 등록 (예: 여권번호, 링크드인, 지갑주소)"
-  },
-  "btnAddCustomField": {
-    "message": "+ 커스텀 필드 추가"
-  },
-  "automationTitle": {
-    "message": "자동화 & 백업"
-  },
-  "autoSubmitTitle": {
-    "message": "폼 자동 제출 (Auto-Submit)"
-  },
-  "autoSubmitDesc": {
-    "message": "폼 채우기 완료 후 제출 버튼을 자동으로 클릭"
-  },
-  "btnExportJSON": {
-    "message": "📥 프로필 내보내기 (JSON)"
-  },
-  "btnImportJSON": {
-    "message": "📤 프로필 불러오기"
-  },
-  "btnSave": {
-    "message": "저장"
-  },
-  "btnFill": {
-    "message": "지금 채우기"
-  },
-  "btnDelete": {
-    "message": "삭제"
-  },
-  "keyPlaceholder": {
-    "message": "키워드 (여권)"
-  },
-  "valPlaceholder": {
-    "message": "답변 (M123456)"
-  },
-  "statusInitial": {
-    "message": "+ 추가 버튼을 눌러 첫 프로필을 만드세요"
-  },
-  "statusEditing": {
-    "message": "프로필 $INDEX$ 편집 중",
-    "placeholders": {
-      "index": {
-        "content": "$1"
-      }
-    }
-  },
-  "statusSaved": {
-    "message": "프로필이 저장되었습니다 ✓"
-  },
-  "statusDeleted": {
-    "message": "프로필이 삭제되었습니다"
-  },
-  "statusFilled": {
-    "message": "폼이 채워졌습니다! ✨"
-  },
-  "toastSuccess": {
-    "message": "$COUNT$개 필드를 자동으로 채웠습니다 ✨",
-    "placeholders": {
-      "count": {
-        "content": "$1"
-      }
-    }
-  },
-  "toastWarning": {
-    "message": "채울 수 있는 필드를 찾지 못했습니다"
+ "extName": {
+  "message": "FastForm - 무료 폼 자동 채우기 & 업무 자동화"
+ },
+ "extDesc": {
+  "message": "무제한 프로필 템플릿을 저장하고 Alt+A 단축키 한 번으로 웹 폼을 100% 무료로 자동 채워줍니다."
+ },
+ "subtitle": {
+  "message": "원클릭 무제한 폼 자동 채우기"
+ },
+ "addBtn": {
+  "message": "추가"
+ },
+ "personalInfoTitle": {
+  "message": "기본 및 연락처 정보"
+ },
+ "profileNameLabel": {
+  "message": "프로필 이름"
+ },
+ "profileNamePlaceholder": {
+  "message": "예: 개인용, 회사용, 부업용"
+ },
+ "firstNameLabel": {
+  "message": "이름 (First Name)"
+ },
+ "lastNameLabel": {
+  "message": "성 (Last Name)"
+ },
+ "emailLabel": {
+  "message": "이메일 주소"
+ },
+ "phoneLabel": {
+  "message": "전화번호"
+ },
+ "taxIdLabel": {
+  "message": "사업자등록번호 / Tax ID / VAT"
+ },
+ "addressTitle": {
+  "message": "주소 정보"
+ },
+ "streetAddrLabel": {
+  "message": "주소 / 도로명 (Line 1)"
+ },
+ "aptAddrLabel": {
+  "message": "상세주소 / 동호수 (Line 2)"
+ },
+ "cityLabel": {
+  "message": "도시 (City)"
+ },
+ "stateLabel": {
+  "message": "주 / 도 (State/Region)"
+ },
+ "zipLabel": {
+  "message": "우편번호 (ZIP Code)"
+ },
+ "countryLabel": {
+  "message": "국가 (Country)"
+ },
+ "companyTitle": {
+  "message": "회사 및 추가 답변"
+ },
+ "companyLabel": {
+  "message": "회사명"
+ },
+ "jobTitleLabel": {
+  "message": "직위 / 부서"
+ },
+ "noteLabel": {
+  "message": "기타 표준 답변 / 메모"
+ },
+ "customFieldsTitle": {
+  "message": "맞춤형 커스텀 필드"
+ },
+ "customFieldsDesc": {
+  "message": "원하는 키워드와 답변을 자유롭게 등록 (예: 여권번호, 링크드인, 지갑주소)"
+ },
+ "btnAddCustomField": {
+  "message": "+ 커스텀 필드 추가"
+ },
+ "automationTitle": {
+  "message": "자동화 & 백업"
+ },
+ "autoSubmitTitle": {
+  "message": "폼 자동 제출 (Auto-Submit)"
+ },
+ "autoSubmitDesc": {
+  "message": "폼 채우기 완료 후 제출 버튼을 자동으로 클릭"
+ },
+ "btnExportJSON": {
+  "message": " 프로필 내보내기 (JSON)"
+ },
+ "btnImportJSON": {
+  "message": " 프로필 불러오기"
+ },
+ "btnSave": {
+  "message": "저장"
+ },
+ "btnFill": {
+  "message": "지금 채우기"
+ },
+ "btnDelete": {
+  "message": "삭제"
+ },
+ "keyPlaceholder": {
+  "message": "키워드 (여권)"
+ },
+ "valPlaceholder": {
+  "message": "답변 (M123456)"
+ },
+ "statusInitial": {
+  "message": "+ 추가 버튼을 눌러 첫 프로필을 만드세요"
+ },
+ "statusEditing": {
+  "message": "프로필 $INDEX$ 편집 중",
+  "placeholders": {
+   "index": {
+    "content": "$1"
+   }
   }
+ },
+ "statusSaved": {
+  "message": "프로필이 저장되었습니다 "
+ },
+ "statusDeleted": {
+  "message": "프로필이 삭제되었습니다"
+ },
+ "statusFilled": {
+  "message": "폼이 채워졌습니다! "
+ },
+ "toastSuccess": {
+  "message": "$COUNT$개 필드를 자동으로 채웠습니다 ",
+  "placeholders": {
+   "count": {
+    "content": "$1"
+   }
+  }
+ },
+ "toastWarning": {
+  "message": "채울 수 있는 필드를 찾지 못했습니다"
+ }
 }

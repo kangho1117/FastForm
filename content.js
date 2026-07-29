@@ -73,27 +73,13 @@
   };
 
   // ─── 5-Language Cross-Lingual Thesaurus Matrix ─────────────────────
-  // Supports: English (en), Korean (ko), Japanese (ja), Chinese (zh_CN), Spanish (es)
   const SYNONYM_GROUPS = [
-    // Passport
     ['passport', 'pass_port', 'pp_num', 'passport_no', 'passport_number', 'passportno', '여권', '여권번호', '여권_번호', 'パスポート', 'パスポート番号', '护照', '护照号', '护照号码', 'pasaporte', 'num_pasaporte'],
-
-    // Driver's License
     ['license', 'licence', 'driver_license', 'driver_licence', 'dl_number', 'driver_id', '운전면허', '면허', '면허번호', '運転免許', '免許証', '驾照', '驾驶证', '驾驶执照', 'licencia', 'licencia_conducir', 'carnet_conducir'],
-
-    // National ID / SSN / DNI / MyNumber
     ['ssn', 'social_security', 'national_id', 'id_number', 'id_no', 'personal_id', 'identity', '주민번호', '주민등록번호', '신분증', 'マイナンバー', '身份证', '身份证号', '身份证号码', 'dni', 'cedula', 'identificacion'],
-
-    // Tax ID / VAT / Business Registration
     ['vat', 'vat_id', 'vat_number', 'tax_id', 'tax_code', 'ein', 'business_number', '사업자', '사업자번호', '사업자등록번호', '税務番号', '税号', '纳税人识别号', 'nif', 'cif', 'registro_fiscal'],
-
-    // Crypto Wallet
     ['wallet', 'crypto', 'eth_address', 'btc_address', 'wallet_address', 'crypto_wallet', '지갑', '지갑주소', '暗号資産', 'ウォレット', '钱包', '钱包地址', 'billetera', 'direccion_billetera'],
-
-    // Emergency Contact
     ['emergency', 'emergency_contact', 'ice_phone', '비상연락처', '비상연락', '긴급연락처', '緊急連絡先', '紧急联系人', 'contacto_emergencia'],
-
-    // Payment & Social Messengers
     ['paypal', 'paypal_email', 'paypal_id', '페이팔', 'ペイパル', '贝宝'],
     ['instagram', 'insta', 'ig_handle', 'ig_profile', '인스타', '인스타그램', 'インスタ', 'インスタグラム', '小红书', 'redbook'],
     ['facebook', 'fb_profile', 'fb_id', '페이스북', '페북', 'フェイスブック', '脸书'],
@@ -107,9 +93,6 @@
     ['github', 'github_url', 'git', '깃허브', '깃헙', 'ギットハブ']
   ];
 
-  /**
-   * Find all cross-lingual synonyms for a given label string
-   */
   function getSynonymKeywords(label) {
     if (!label) return [];
     const cleanLabel = label.toLowerCase().trim().replace(/[\s_-]+/g, '');
@@ -315,9 +298,7 @@
       if (!fieldType) continue;
 
       let value = activeProfile[fieldType];
-
       if (!value) continue;
-
       if (field.value === value) continue;
 
       if (field.tagName === 'SELECT') {
@@ -388,7 +369,7 @@
     const toast = document.createElement('div');
     toast.id = 'fastform-notification';
 
-    let successText = `Filled ${count} field(s) instantly ✨`;
+    let successText = `Filled ${count} field(s) instantly`;
     let warningText = `No matching fields detected on this page`;
 
     if (typeof chrome !== 'undefined' && chrome.i18n) {

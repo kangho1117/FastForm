@@ -1,4 +1,4 @@
-# FastForm ⚡
+# FastForm
 > **One-Click Form AutoFiller & Automation for Google Chrome**  
 > Save unlimited profile templates and autofill web forms instantly with `Alt + A`. 100% Free & Privacy-First.
 
@@ -11,27 +11,19 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- **⚡ 1-Click Form Autofill (`Alt + A`)**: Fill complex web forms in under 1 second using keyboard shortcuts or the extension popup.
-- **👤 Unlimited Profiles**: Create and switch between multiple profile templates for Personal, Work, Side-Hustles, or Shopping.
-- **🌐 5-Language Cross-Lingual Thesaurus Engine**: Intelligently detects standard HTML attributes and matches keywords across **English, Korean (한국어), Japanese (日本語), Chinese (中文), and Spanish (Español)**.
-- **🏷️ Custom Key-Value Fields**: Define custom answers for unique input fields (e.g. Passport Number, Crypto Wallet Address, LinkedIn URL, Tax ID/VAT).
-- **🧩 Smart Name Parser**: Automatically splits or merges `First Name` and `Last Name` depending on individual site form layouts.
-- **📦 JSON Backup & Migration**: Export and import your profiles with a single click to easily sync across different computers.
-- **🔒 100% Privacy-First**: All data is encrypted and saved strictly inside your browser's local storage (`chrome.storage.local`). No personal data ever leaves your device.
-
----
-
-## 📸 Screenshots
-
-| Popup Interface | Cross-Lingual Autofill Demo |
-| :---: | :---: |
-| ![Popup UI](icons/icon128.png) | ![Autofill Screenshot](screenshot_1280x800.jpg) |
+- **1-Click Form Autofill (`Alt + A`)**: Fill complex web forms in under 1 second using keyboard shortcuts or the extension popup.
+- **Unlimited Profiles**: Create and switch between multiple profile templates for Personal, Work, Side-Hustles, or Shopping.
+- **5-Language Cross-Lingual Thesaurus Engine**: Intelligently detects standard HTML attributes and matches keywords across **English, Korean, Japanese, Chinese, and Spanish**.
+- **Custom Key-Value Fields**: Define custom answers for unique input fields (e.g. Passport Number, Crypto Wallet Address, LinkedIn URL, Tax ID/VAT).
+- **Smart Name Parser**: Automatically splits or merges `First Name` and `Last Name` depending on individual site form layouts.
+- **JSON Backup & Migration**: Export and import your profiles with a single click to easily sync across different computers.
+- **100% Privacy-First**: All data is encrypted and saved strictly inside your browser's local storage (`chrome.storage.local`). No personal data ever leaves your device.
 
 ---
 
-## 📥 How to Install
+## How to Install
 
 ### Option 1: Chrome Web Store (Recommended)
 Simply search for **`FastForm`** in the [Chrome Web Store](https://chromewebstore.google.com) and click **Add to Chrome**!
@@ -53,7 +45,15 @@ Simply search for **`FastForm`** in the [Chrome Web Store](https://chromewebstor
 
 ---
 
-## 📂 Project Structure
+## Screenshots
+
+| Popup Interface | Cross-Lingual Autofill Demo |
+| :---: | :---: |
+| ![Popup UI](icons/icon128.png) | ![Autofill Screenshot](screenshot_1280x800.jpg) |
+
+---
+
+## Project Structure
 
 ```text
 FastForm/
@@ -77,7 +77,7 @@ FastForm/
 
 ---
 
-## ⚙️ Supported Fields
+## Supported Fields
 
 FastForm automatically detects and fills:
 - **Personal Info**: First Name, Last Name, Full Name, Email, Phone Number, Business/Tax ID
@@ -87,13 +87,13 @@ FastForm automatically detects and fills:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!  
 Feel free to check the [issues page](https://github.com/YOUR_USERNAME/FastForm/issues).
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.

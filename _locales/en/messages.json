@@ -1,141 +1,141 @@
 {
-  "extName": {
-    "message": "FastForm - Free Form AutoFiller & Automation"
-  },
-  "extDesc": {
-    "message": "Save unlimited profile templates and autofill web forms instantly with Alt+A. 100% Free forever."
-  },
-  "subtitle": {
-    "message": "One-Click Form AutoFiller"
-  },
-  "addBtn": {
-    "message": "Add"
-  },
-  "personalInfoTitle": {
-    "message": "Personal & Contact Info"
-  },
-  "profileNameLabel": {
-    "message": "Profile Name"
-  },
-  "profileNamePlaceholder": {
-    "message": "e.g. Personal, Work, Side-Hustle"
-  },
-  "firstNameLabel": {
-    "message": "First Name"
-  },
-  "lastNameLabel": {
-    "message": "Last Name"
-  },
-  "emailLabel": {
-    "message": "Email Address"
-  },
-  "phoneLabel": {
-    "message": "Phone Number"
-  },
-  "taxIdLabel": {
-    "message": "Tax ID / VAT / Business Registration No."
-  },
-  "addressTitle": {
-    "message": "Address Details"
-  },
-  "streetAddrLabel": {
-    "message": "Street Address (Line 1)"
-  },
-  "aptAddrLabel": {
-    "message": "Apt / Suite / Unit (Line 2)"
-  },
-  "cityLabel": {
-    "message": "City"
-  },
-  "stateLabel": {
-    "message": "State / Region"
-  },
-  "zipLabel": {
-    "message": "ZIP / Postal Code"
-  },
-  "countryLabel": {
-    "message": "Country"
-  },
-  "companyTitle": {
-    "message": "Company & Custom Answers"
-  },
-  "companyLabel": {
-    "message": "Company Name"
-  },
-  "jobTitleLabel": {
-    "message": "Job Title / Role"
-  },
-  "noteLabel": {
-    "message": "Default Answer / Notes"
-  },
-  "customFieldsTitle": {
-    "message": "Custom Fields & Answers"
-  },
-  "customFieldsDesc": {
-    "message": "Define custom keywords & answers (e.g. Passport, LinkedIn, Wallet)"
-  },
-  "btnAddCustomField": {
-    "message": "+ Add Custom Field"
-  },
-  "automationTitle": {
-    "message": "Automation & Backup"
-  },
-  "autoSubmitTitle": {
-    "message": "Auto-Submit Form"
-  },
-  "autoSubmitDesc": {
-    "message": "Automatically click submit button after filling form"
-  },
-  "btnExportJSON": {
-    "message": "📥 Export Profiles (JSON)"
-  },
-  "btnImportJSON": {
-    "message": "📤 Import Profiles"
-  },
-  "btnSave": {
-    "message": "Save"
-  },
-  "btnFill": {
-    "message": "Fill Form Now"
-  },
-  "btnDelete": {
-    "message": "Delete"
-  },
-  "keyPlaceholder": {
-    "message": "Key (Passport)"
-  },
-  "valPlaceholder": {
-    "message": "Value (M123456)"
-  },
-  "statusInitial": {
-    "message": "Click + Add to create your first profile"
-  },
-  "statusEditing": {
-    "message": "Editing Profile $INDEX$",
-    "placeholders": {
-      "index": {
-        "content": "$1"
-      }
-    }
-  },
-  "statusSaved": {
-    "message": "Profile saved successfully ✓"
-  },
-  "statusDeleted": {
-    "message": "Profile deleted"
-  },
-  "statusFilled": {
-    "message": "Form autofilled! ✨"
-  },
-  "toastSuccess": {
-    "message": "Filled $COUNT$ field(s) instantly ✨",
-    "placeholders": {
-      "count": {
-        "content": "$1"
-      }
-    }
-  },
-  "toastWarning": {
-    "message": "No matching fields detected on this page"
+ "extName": {
+  "message": "FastForm - Free Form AutoFiller & Automation"
+ },
+ "extDesc": {
+  "message": "Save unlimited profile templates and autofill web forms instantly with Alt+A. 100% Free forever."
+ },
+ "subtitle": {
+  "message": "One-Click Form AutoFiller"
+ },
+ "addBtn": {
+  "message": "Add"
+ },
+ "personalInfoTitle": {
+  "message": "Personal & Contact Info"
+ },
+ "profileNameLabel": {
+  "message": "Profile Name"
+ },
+ "profileNamePlaceholder": {
+  "message": "e.g. Personal, Work, Side-Hustle"
+ },
+ "firstNameLabel": {
+  "message": "First Name"
+ },
+ "lastNameLabel": {
+  "message": "Last Name"
+ },
+ "emailLabel": {
+  "message": "Email Address"
+ },
+ "phoneLabel": {
+  "message": "Phone Number"
+ },
+ "taxIdLabel": {
+  "message": "Tax ID / VAT / Business Registration No."
+ },
+ "addressTitle": {
+  "message": "Address Details"
+ },
+ "streetAddrLabel": {
+  "message": "Street Address (Line 1)"
+ },
+ "aptAddrLabel": {
+  "message": "Apt / Suite / Unit (Line 2)"
+ },
+ "cityLabel": {
+  "message": "City"
+ },
+ "stateLabel": {
+  "message": "State / Region"
+ },
+ "zipLabel": {
+  "message": "ZIP / Postal Code"
+ },
+ "countryLabel": {
+  "message": "Country"
+ },
+ "companyTitle": {
+  "message": "Company & Custom Answers"
+ },
+ "companyLabel": {
+  "message": "Company Name"
+ },
+ "jobTitleLabel": {
+  "message": "Job Title / Role"
+ },
+ "noteLabel": {
+  "message": "Default Answer / Notes"
+ },
+ "customFieldsTitle": {
+  "message": "Custom Fields & Answers"
+ },
+ "customFieldsDesc": {
+  "message": "Define custom keywords & answers (e.g. Passport, LinkedIn, Wallet)"
+ },
+ "btnAddCustomField": {
+  "message": "+ Add Custom Field"
+ },
+ "automationTitle": {
+  "message": "Automation & Backup"
+ },
+ "autoSubmitTitle": {
+  "message": "Auto-Submit Form"
+ },
+ "autoSubmitDesc": {
+  "message": "Automatically click submit button after filling form"
+ },
+ "btnExportJSON": {
+  "message": " Export Profiles (JSON)"
+ },
+ "btnImportJSON": {
+  "message": " Import Profiles"
+ },
+ "btnSave": {
+  "message": "Save"
+ },
+ "btnFill": {
+  "message": "Fill Form Now"
+ },
+ "btnDelete": {
+  "message": "Delete"
+ },
+ "keyPlaceholder": {
+  "message": "Key (Passport)"
+ },
+ "valPlaceholder": {
+  "message": "Value (M123456)"
+ },
+ "statusInitial": {
+  "message": "Click + Add to create your first profile"
+ },
+ "statusEditing": {
+  "message": "Editing Profile $INDEX$",
+  "placeholders": {
+   "index": {
+    "content": "$1"
+   }
   }
+ },
+ "statusSaved": {
+  "message": "Profile saved successfully "
+ },
+ "statusDeleted": {
+  "message": "Profile deleted"
+ },
+ "statusFilled": {
+  "message": "Form autofilled! "
+ },
+ "toastSuccess": {
+  "message": "Filled $COUNT$ field(s) instantly ",
+  "placeholders": {
+   "count": {
+    "content": "$1"
+   }
+  }
+ },
+ "toastWarning": {
+  "message": "No matching fields detected on this page"
+ }
 }

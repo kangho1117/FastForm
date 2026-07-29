@@ -31,7 +31,15 @@
 
 ---
 
-## 🚀 Quick Start (Local Installation)
+## 📥 How to Install
+
+### Option 1: Chrome Web Store (Recommended)
+Simply search for **`FastForm`** in the [Chrome Web Store](https://chromewebstore.google.com) and click **Add to Chrome**!
+> **한국어 안내**: 크롬 웹스토어 검색창에서 **`FastForm`**을 검색하시면 클릭 한 번으로 바로 설치하여 사용하실 수 있습니다.
+
+---
+
+### Option 2: Local Developer Mode Installation
 
 1. Clone or download this repository:
    ```bash

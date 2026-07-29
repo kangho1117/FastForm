@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=420, initial-scale=1.0">
+  <title>FastForm - Free Form AutoFiller & Automation</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-brand">
+        <div class="logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo-gradient)"/>
+            <path d="M8 9h12M8 14h8M8 19h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="19" r="4" fill="#34D399" stroke="white" stroke-width="1.5"/>
+            <path d="M18.5 19l1 1 2-2" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title-row">
+            <h1 class="header-title">FastForm</h1>
+            <span class="plan-badge free-badge">100% FREE</span>
+          </div>
+          <p class="header-subtitle" data-i18n="subtitle">One-Click Form AutoFiller</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="header-shortcut">
+          <kbd>Alt</kbd> + <kbd>A</kbd>
+        </div>
+      </div>
+    </header>
+
+    <!-- Profile Tabs -->
+    <div class="profile-tabs">
+      <div class="tabs-row" id="tabsRow">
+        <!-- Tabs dynamically generated -->
+      </div>
+      <button class="btn-add-profile" id="btnAddProfile" title="Add New Profile">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span data-i18n="addBtn">Add</span>
+      </button>
+    </div>
+
+    <!-- Profile Form -->
+    <div class="profile-form" id="profileForm">
+      <div class="form-section">
+        <h3 class="section-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 14a6 6 0 0112 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="personalInfoTitle">Personal & Contact Info</span>
+        </h3>
+        <div class="form-group">
+          <label for="profileName" data-i18n="profileNameLabel">Profile Name</label>
+          <input type="text" id="profileName" data-i18n-placeholder="profileNamePlaceholder" placeholder="e.g. Personal, Work, Side-Hustle">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fieldFirstName" data-i18n="firstNameLabel">First Name</label>
+            <input type="text" id="fieldFirstName" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="fieldLastName" data-i18n="lastNameLabel">Last Name</label>
+            <input type="text" id="fieldLastName" placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fieldEmail" data-i18n="emailLabel">Email Address</label>
+            <input type="email" id="fieldEmail" placeholder="john.doe@example.com">
+          </div>
+          <div class="form-group">
+            <label for="fieldPhone" data-i18n="phoneLabel">Phone Number</label>
+            <input type="tel" id="fieldPhone" placeholder="+1 (555) 019-2834">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fieldBusinessNumber" data-i18n="taxIdLabel">Tax ID / VAT / Business Registration No.</label>
+          <input type="text" id="fieldBusinessNumber" placeholder="US123456789 or 123-45-67890">
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3 class="section-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M2 6l6-4 6 4v7a1 1 0 01-1 1H3a1 1 0 01-1-1V6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 14V9h4v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-i18n="addressTitle">Address Details</span>
+        </h3>
+        <div class="form-group">
+          <label for="fieldAddress" data-i18n="streetAddrLabel">Street Address (Line 1)</label>
+          <input type="text" id="fieldAddress" placeholder="742 Evergreen Terrace">
+        </div>
+        <div class="form-group">
+          <label for="fieldAddressDetail" data-i18n="aptAddrLabel">Apt / Suite / Unit (Line 2)</label>
+          <input type="text" id="fieldAddressDetail" placeholder="Suite 4B">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fieldCity" data-i18n="cityLabel">City</label>
+            <input type="text" id="fieldCity" placeholder="San Francisco">
+          </div>
+          <div class="form-group">
+            <label for="fieldState" data-i18n="stateLabel">State / Region</label>
+            <input type="text" id="fieldState" placeholder="California">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fieldZipcode" data-i18n="zipLabel">ZIP / Postal Code</label>
+            <input type="text" id="fieldZipcode" placeholder="94107">
+          </div>
+          <div class="form-group">
+            <label for="fieldCountry" data-i18n="countryLabel">Country</label>
+            <input type="text" id="fieldCountry" placeholder="United States">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3 class="section-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="companyTitle">Company & Custom Answers</span>
+        </h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fieldCompany" data-i18n="companyLabel">Company Name</label>
+            <input type="text" id="fieldCompany" placeholder="Acme Corp">
+          </div>
+          <div class="form-group">
+            <label for="fieldPosition" data-i18n="jobTitleLabel">Job Title / Role</label>
+            <input type="text" id="fieldPosition" placeholder="Product Manager">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fieldNote" data-i18n="noteLabel">Default Answer / Notes</label>
+          <input type="text" id="fieldNote" placeholder="Standard response or notes for open fields">
+        </div>
+      </div>
+
+      <!-- Custom Fields Section -->
+      <div class="form-section">
+        <div class="custom-fields-header">
+          <h3 class="section-title" style="margin-bottom: 0;">
+            <span data-i18n="customFieldsTitle">Custom Fields & Answers</span>
+          </h3>
+          <button class="btn-add-custom" id="btnAddCustomField" data-i18n="btnAddCustomField">+ Add Custom Field</button>
+        </div>
+        <p class="custom-fields-desc" data-i18n="customFieldsDesc">Define custom keywords & answers (e.g. Passport, LinkedIn, Wallet)</p>
+        <div class="custom-fields-list" id="customFieldsList">
+          <!-- Custom fields rows dynamically generated -->
+        </div>
+      </div>
+
+      <!-- Backup Section -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span data-i18n="automationTitle">Backup & Profiles</span>
+        </h3>
+        <div class="pro-backup-row">
+          <button class="btn-backup" id="btnExportJSON" data-i18n="btnExportJSON">📥 Export Profiles (JSON)</button>
+          <button class="btn-backup" id="btnImportJSON" data-i18n="btnImportJSON">📤 Import Profiles</button>
+          <input type="file" id="fileImportInput" accept=".json" style="display:none">
+        </div>
+      </div>
+
+      <!-- Honest & Transparent Ad Banner Section -->
+      <div class="ad-card" id="adBannerCard">
+        <div class="ad-header-row">
+          <span class="ad-badge">📢 SPONSORED AD</span>
+          <span class="ad-tag font-mono">ADSTERRA</span>
+        </div>
+        <a href="https://www.effectivecpmnetwork.com/h1g9m3z3x?key=6fcc3e71d5fce0a98f6b708fd77935fa" target="_blank" class="ad-content-link" id="adLink">
+          <div class="ad-icon">🎁</div>
+          <div class="ad-info">
+            <strong id="adTitle">Support FastForm (Sponsor)</strong>
+            <p id="adDesc">Click to view partner offers & help keep FastForm free.</p>
+          </div>
+          <div class="ad-cta-btn">Visit Link ↗</div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="actions">
+      <button class="btn btn-save" id="btnSave">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M12.667 14H3.333A1.333 1.333 0 012 12.667V3.333A1.333 1.333 0 013.333 2h7.334L14 5.333v7.334A1.333 1.333 0 0112.667 14z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.333 14V9.333H4.667V14M4.667 2v3.333h5.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="btnSave">Save</span>
+      </button>
+      <button class="btn btn-fill" id="btnFill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M13.333 2l-8 8M13.333 2L9.333 14l-1.666-4.667L3 7.667 13.333 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="btnFill">Fill Form Now</span>
+      </button>
+      <button class="btn btn-delete" id="btnDelete" title="Delete Profile">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+        <span data-i18n="btnDelete">Delete</span>
+      </button>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar" id="statusBar">
+      <span class="status-dot"></span>
+      <span class="status-text" id="statusText" data-i18n="statusInitial">Add a profile to get started</span>
+    </div>
+  </div>
+
+  <script src="lib/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

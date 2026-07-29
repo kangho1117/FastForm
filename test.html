@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastForm - Interactive Test Page</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --border: #334155;
+      --success: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 32px; font-weight: 800; background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p.subtitle { color: var(--text-muted); margin-top: 8px; font-size: 16px; }
+    
+    .shortcut-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #a5b4fc;
+    }
+    kbd {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .form-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .badge-free {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .full-width { grid-column: span 2; }
+
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    label { font-size: 14px; font-weight: 500; color: var(--text-muted); }
+    input, select, textarea {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: var(--text);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+    
+    .btn-submit {
+      background: linear-gradient(135deg, var(--primary), #8b5cf6);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+      transition: all 0.2s;
+    }
+    .btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>FastForm Autofill Test Page</h1>
+      <p class="subtitle">Open FastForm extension and press Alt+A to autofill all fields instantly!</p>
+      <div class="shortcut-badge">
+        Press <kbd>Alt</kbd> + <kbd>A</kbd> on this page to test autofill
+      </div>
+    </header>
+
+    <!-- Standard Form -->
+    <form class="form-card" onsubmit="event.preventDefault(); alert('🎉 Form submitted successfully!');">
+      <div class="form-title">
+        <span>Standard Web Application Form</span>
+        <span class="badge-free">100% FREE</span>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 555 0192">
+        </div>
+        <div class="form-group full-width">
+          <label for="tax_id">Business Tax ID / VAT</label>
+          <input type="text" id="tax_id" name="tax_id" placeholder="Tax registration number">
+        </div>
+        <div class="form-group full-width">
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="San Francisco">
+        </div>
+        <div class="form-group">
+          <label for="state">State / Province</label>
+          <input type="text" id="state" name="state" placeholder="California">
+        </div>
+        <div class="form-group">
+          <label for="zip">ZIP / Postal Code</label>
+          <input type="text" id="zip" name="zip" placeholder="94107">
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="United States">
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Acme Inc.">
+        </div>
+        <div class="form-group">
+          <label for="passport_number">Passport Number (Cross-Lingual Test)</label>
+          <input type="text" id="passport_number" name="passport_number" placeholder="Passport number">
+        </div>
+        <div class="form-group full-width">
+          <label for="note">Additional Notes</label>
+          <textarea id="note" name="note" rows="2" placeholder="Default notes"></textarea>
+        </div>
+        <div class="full-width">
+          <button type="submit" class="btn-submit">Submit Form</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

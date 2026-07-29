@@ -1,0 +1,141 @@
+{
+  "extName": {
+    "message": "FastForm - Autocompletado de Formularios"
+  },
+  "extDesc": {
+    "message": "Guarde plantillas de perfil y autocomplete formularios web al instante con Alt+A."
+  },
+  "subtitle": {
+    "message": "Relleno de Formularios en 1-Clic"
+  },
+  "addBtn": {
+    "message": "Añadir"
+  },
+  "personalInfoTitle": {
+    "message": "Información Personal y de Contacto"
+  },
+  "profileNameLabel": {
+    "message": "Nombre del Perfil"
+  },
+  "profileNamePlaceholder": {
+    "message": "ej. Personal, Trabajo"
+  },
+  "firstNameLabel": {
+    "message": "Nombre (First Name)"
+  },
+  "lastNameLabel": {
+    "message": "Apellido (Last Name)"
+  },
+  "emailLabel": {
+    "message": "Correo Electrónico"
+  },
+  "phoneLabel": {
+    "message": "Número de Teléfono"
+  },
+  "taxIdLabel": {
+    "message": "NIF / CIF / Registro Fiscal"
+  },
+  "addressTitle": {
+    "message": "Detalles de Dirección"
+  },
+  "streetAddrLabel": {
+    "message": "Dirección (Línea 1)"
+  },
+  "aptAddrLabel": {
+    "message": "Piso / Puerta (Línea 2)"
+  },
+  "cityLabel": {
+    "message": "Ciudad"
+  },
+  "stateLabel": {
+    "message": "Provincia / Estado"
+  },
+  "zipLabel": {
+    "message": "Código Postal"
+  },
+  "countryLabel": {
+    "message": "País"
+  },
+  "companyTitle": {
+    "message": "Empresa y Respuestas"
+  },
+  "companyLabel": {
+    "message": "Nombre de Empresa"
+  },
+  "jobTitleLabel": {
+    "message": "Puesto / Cargo"
+  },
+  "noteLabel": {
+    "message": "Notas por Defecto"
+  },
+  "customFieldsTitle": {
+    "message": "Campos Personalizados (Pro)"
+  },
+  "customFieldsDesc": {
+    "message": "Defina palabras clave y respuestas (ej. Pasaporte, LinkedIn)"
+  },
+  "btnAddCustomField": {
+    "message": "+ Añadir Campo"
+  },
+  "automationTitle": {
+    "message": "Automatización y Copia"
+  },
+  "autoSubmitTitle": {
+    "message": "Envío Automático"
+  },
+  "autoSubmitDesc": {
+    "message": "Haga clic en enviar automáticamente tras rellenar"
+  },
+  "btnExportJSON": {
+    "message": "📥 Exportar Perfiles (JSON)"
+  },
+  "btnImportJSON": {
+    "message": "📤 Importar Perfiles"
+  },
+  "btnSave": {
+    "message": "Guardar"
+  },
+  "btnFill": {
+    "message": "Rellenar Ahora"
+  },
+  "btnDelete": {
+    "message": "Eliminar"
+  },
+  "keyPlaceholder": {
+    "message": "Clave (Pasaporte)"
+  },
+  "valPlaceholder": {
+    "message": "Valor (M123456)"
+  },
+  "statusInitial": {
+    "message": "Haga clic en + Añadir para crear su primer perfil"
+  },
+  "statusEditing": {
+    "message": "Editando Perfil $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSaved": {
+    "message": "Perfil guardado con éxito ✓"
+  },
+  "statusDeleted": {
+    "message": "Perfil eliminado"
+  },
+  "statusFilled": {
+    "message": "¡Formulario rellenado! ✨"
+  },
+  "toastSuccess": {
+    "message": "¡Se completaron $COUNT$ campo(s)! ✨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastWarning": {
+    "message": "No se encontraron campos coincidentes"
+  }
+}

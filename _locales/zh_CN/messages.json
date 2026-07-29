@@ -1,0 +1,141 @@
+{
+  "extName": {
+    "message": "FastForm - 自动表单填充工具"
+  },
+  "extDesc": {
+    "message": "保存个人资料模板，使用 Alt+A 快捷键一键自动填充网页表单。"
+  },
+  "subtitle": {
+    "message": "一键自动表单填充"
+  },
+  "addBtn": {
+    "message": "添加"
+  },
+  "personalInfoTitle": {
+    "message": "个人与联系信息"
+  },
+  "profileNameLabel": {
+    "message": "配置文件名称"
+  },
+  "profileNamePlaceholder": {
+    "message": "例如：个人、工作"
+  },
+  "firstNameLabel": {
+    "message": "名字 (First Name)"
+  },
+  "lastNameLabel": {
+    "message": "姓氏 (Last Name)"
+  },
+  "emailLabel": {
+    "message": "电子邮件"
+  },
+  "phoneLabel": {
+    "message": "电话号码"
+  },
+  "taxIdLabel": {
+    "message": "税号 / 税务登记号"
+  },
+  "addressTitle": {
+    "message": "地址详情"
+  },
+  "streetAddrLabel": {
+    "message": "街道地址 (Line 1)"
+  },
+  "aptAddrLabel": {
+    "message": "房间/公寓号 (Line 2)"
+  },
+  "cityLabel": {
+    "message": "城市 (City)"
+  },
+  "stateLabel": {
+    "message": "州/省 (State/Province)"
+  },
+  "zipLabel": {
+    "message": "邮政编码 (ZIP Code)"
+  },
+  "countryLabel": {
+    "message": "国家 (Country)"
+  },
+  "companyTitle": {
+    "message": "公司与自定义答案"
+  },
+  "companyLabel": {
+    "message": "公司名称"
+  },
+  "jobTitleLabel": {
+    "message": "职位/头衔"
+  },
+  "noteLabel": {
+    "message": "默认备注/回答"
+  },
+  "customFieldsTitle": {
+    "message": "自定义字段 (Pro)"
+  },
+  "customFieldsDesc": {
+    "message": "自定义关键词与回答（例如：护照号、社交账号）"
+  },
+  "btnAddCustomField": {
+    "message": "+ 添加自定义字段"
+  },
+  "automationTitle": {
+    "message": "自动化与备份"
+  },
+  "autoSubmitTitle": {
+    "message": "自动提交表单"
+  },
+  "autoSubmitDesc": {
+    "message": "填充完毕后自动点击提交按钮"
+  },
+  "btnExportJSON": {
+    "message": "📥 导出配置 (JSON)"
+  },
+  "btnImportJSON": {
+    "message": "📤 导入配置"
+  },
+  "btnSave": {
+    "message": "保存"
+  },
+  "btnFill": {
+    "message": "立即填充"
+  },
+  "btnDelete": {
+    "message": "删除"
+  },
+  "keyPlaceholder": {
+    "message": "关键词 (护照号)"
+  },
+  "valPlaceholder": {
+    "message": "数值 (M123456)"
+  },
+  "statusInitial": {
+    "message": "点击 + 添加按钮创建首个配置文件"
+  },
+  "statusEditing": {
+    "message": "正在编辑配置文件 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSaved": {
+    "message": "已成功保存 ✓"
+  },
+  "statusDeleted": {
+    "message": "已删除配置文件"
+  },
+  "statusFilled": {
+    "message": "自动填充完成！ ✨"
+  },
+  "toastSuccess": {
+    "message": "已快速填充 $COUNT$ 个字段 ✨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastWarning": {
+    "message": "未在此页面检测到匹配字段"
+  }
+}

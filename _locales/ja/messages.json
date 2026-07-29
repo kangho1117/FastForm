@@ -1,0 +1,141 @@
+{
+  "extName": {
+    "message": "FastForm - フォーム自動入力ツール"
+  },
+  "extDesc": {
+    "message": "プロフィールを保存し、ショートカット(Alt+A)でフォームを瞬時に自動入力します。"
+  },
+  "subtitle": {
+    "message": "ワンクリック フォーム自動入力"
+  },
+  "addBtn": {
+    "message": "追加"
+  },
+  "personalInfoTitle": {
+    "message": "基本・連絡先情報"
+  },
+  "profileNameLabel": {
+    "message": "プロフィール名"
+  },
+  "profileNamePlaceholder": {
+    "message": "例：個人用、会社用"
+  },
+  "firstNameLabel": {
+    "message": "名 (First Name)"
+  },
+  "lastNameLabel": {
+    "message": "姓 (Last Name)"
+  },
+  "emailLabel": {
+    "message": "メールアドレス"
+  },
+  "phoneLabel": {
+    "message": "電話番号"
+  },
+  "taxIdLabel": {
+    "message": "事業者番号 / Tax ID"
+  },
+  "addressTitle": {
+    "message": "住所情報"
+  },
+  "streetAddrLabel": {
+    "message": "住所1 (Street Address)"
+  },
+  "aptAddrLabel": {
+    "message": "住所2 (Apt / Building)"
+  },
+  "cityLabel": {
+    "message": "市区町村 (City)"
+  },
+  "stateLabel": {
+    "message": "都道府県 (State)"
+  },
+  "zipLabel": {
+    "message": "郵便番号 (Zip Code)"
+  },
+  "countryLabel": {
+    "message": "国 (Country)"
+  },
+  "companyTitle": {
+    "message": "会社・カスタム回答"
+  },
+  "companyLabel": {
+    "message": "会社名"
+  },
+  "jobTitleLabel": {
+    "message": "役職・部署"
+  },
+  "noteLabel": {
+    "message": "メモ・標準回答"
+  },
+  "customFieldsTitle": {
+    "message": "カスタムフィールド (Pro)"
+  },
+  "customFieldsDesc": {
+    "message": "キーワードと回答を自由に設定 (例: パスポート, SNS)"
+  },
+  "btnAddCustomField": {
+    "message": "+ カスタム追加"
+  },
+  "automationTitle": {
+    "message": "自動化＆バックアップ"
+  },
+  "autoSubmitTitle": {
+    "message": "フォーム自動送信"
+  },
+  "autoSubmitDesc": {
+    "message": "入力完了後に送信ボタンを自動クリック"
+  },
+  "btnExportJSON": {
+    "message": "📥 プロフィール出力 (JSON)"
+  },
+  "btnImportJSON": {
+    "message": "📤 プロフィール読み込み"
+  },
+  "btnSave": {
+    "message": "保存"
+  },
+  "btnFill": {
+    "message": "今すぐ入力"
+  },
+  "btnDelete": {
+    "message": "削除"
+  },
+  "keyPlaceholder": {
+    "message": "キーワード (パスポート)"
+  },
+  "valPlaceholder": {
+    "message": "値 (M123456)"
+  },
+  "statusInitial": {
+    "message": "+追加ボタンを押して新規作成"
+  },
+  "statusEditing": {
+    "message": "プロフィール $INDEX$ を編集",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSaved": {
+    "message": "保存しました ✓"
+  },
+  "statusDeleted": {
+    "message": "削除しました"
+  },
+  "statusFilled": {
+    "message": "自動入力が完了しました！ ✨"
+  },
+  "toastSuccess": {
+    "message": "$COUNT$ 件の項目を入力しました ✨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastWarning": {
+    "message": "該当する入力項目が見つかりません"
+  }
+}
